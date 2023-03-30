@@ -154,9 +154,11 @@ public final class ClassFile {
      * It is 55 (JDK 11)
      * if the JVM supports <code>java.util.Optional.isEmpty()</code>.
      */
+    // by CPoet 2023/03/30 JAVA版本号
     public static final int MAJOR_VERSION;
 
     static {
+        // by CPoet 2023/03/30 通过判断类（方法）是否存在的方式来判断JAVA版本
         int ver = JAVA_3;
         try {
             Class.forName("java.lang.StringBuilder");

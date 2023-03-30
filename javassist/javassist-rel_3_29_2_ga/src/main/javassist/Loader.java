@@ -138,6 +138,7 @@ import javassist.bytecode.ClassFile;
  * @see javassist.ClassPool
  * @see javassist.Translator
  */
+// by CPoet 2023/03/30 自定义类加载器
 public class Loader extends ClassLoader {
 
     /**
@@ -421,6 +422,7 @@ public class Loader extends ClassLoader {
     }
 
     private boolean isDefinedPackage(String name) {
+        // by CPoet 2023/03/30 由于JAVA9以后支持Module的方式引入包，因此将JAVA9作为分隔点
         if (ClassFile.MAJOR_VERSION >= ClassFile.JAVA_9)
             return getDefinedPackage(name) == null;
         else
