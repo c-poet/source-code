@@ -9,7 +9,7 @@ public class NumberToken extends AbstractToken {
     }
 
     @Override
-    public TokenType type() {
+    public TokenType getType() {
         return TokenType.NUMBER;
     }
 }

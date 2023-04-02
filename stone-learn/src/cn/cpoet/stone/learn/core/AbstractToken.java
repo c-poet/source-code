@@ -11,6 +11,11 @@ public abstract class AbstractToken implements Token {
      */
     private final int line;
 
+    @Override
+    public int getLine() {
+        return line;
+    }
+
     public AbstractToken(int line) {
         this.line = line;
     }

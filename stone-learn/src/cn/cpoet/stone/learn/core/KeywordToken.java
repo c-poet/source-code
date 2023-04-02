@@ -9,7 +9,7 @@ public class KeywordToken extends AbstractToken {
     }
 
     @Override
-    public TokenType type() {
+    public TokenType getType() {
         return TokenType.KEYWORD;
     }
 }

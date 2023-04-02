@@ -9,7 +9,7 @@ public class StringToken extends AbstractToken {
     }
 
     @Override
-    public TokenType type() {
+    public TokenType getType() {
         return TokenType.STRING;
     }
 }
