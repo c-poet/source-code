@@ -19,5 +19,10 @@ public enum TokenType {
     /**
      * 数字
      */
-    NUMBER
+    NUMBER,
+
+    /**
+     * 结束
+     */
+    EOF
 }
