@@ -30,8 +30,13 @@ package java.lang;
  * reference to the {@code Class} object representing the Java keyword
  * void.
  *
- * @author  unascribed
- * @since   JDK1.1
+ * <hr />
+ * by CPoet 2023/04/07
+ * <p>1. Void类是void的包装类，不支持常规实例化，可以通过拆箱、反射的方式获取实例。</p>
+ * <p>2. 通过反射调用返回空值的方法后，返回的是Void对象实例。</p>
+ *
+ * @author unascribed
+ * @since JDK1.1
  */
 public final
 class Void {
@@ -46,5 +51,7 @@ class Void {
     /*
      * The Void class cannot be instantiated.
      */
-    private Void() {}
+    private Void() {
+
+    }
 }
